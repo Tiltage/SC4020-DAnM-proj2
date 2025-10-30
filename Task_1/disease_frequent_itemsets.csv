@@ -1,0 +1,1746 @@
+disease,itemset_size,itemset,support
+Alcoholic hepatitis,1, abdominal_pain,0.95
+Alcoholic hepatitis,1, distention_of_abdomen,0.95
+Alcoholic hepatitis,1, fluid_overload,0.95
+Alcoholic hepatitis,1, history_of_alcohol_consumption,0.95
+Alcoholic hepatitis,1, swelling_of_stomach,0.95
+Alcoholic hepatitis,1, vomiting,0.95
+Alcoholic hepatitis,1, yellowish_skin,0.95
+Alcoholic hepatitis,2," distention_of_abdomen,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," swelling_of_stomach,  yellowish_skin",0.9
+Alcoholic hepatitis,2," fluid_overload,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," fluid_overload,  yellowish_skin",0.9
+Alcoholic hepatitis,2," swelling_of_stomach,  vomiting",0.9
+Alcoholic hepatitis,2," abdominal_pain,  vomiting",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," abdominal_pain,  yellowish_skin",0.9
+Alcoholic hepatitis,2," abdominal_pain,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," abdominal_pain,  fluid_overload",0.9
+Alcoholic hepatitis,2," abdominal_pain,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," fluid_overload,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," vomiting,  yellowish_skin",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  vomiting",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  yellowish_skin",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," abdominal_pain,  distention_of_abdomen",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  yellowish_skin",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  vomiting",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  fluid_overload",0.9
+Alcoholic hepatitis,2," fluid_overload,  vomiting",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," swelling_of_stomach,  yellowish_skin",0.9
+Alcoholic hepatitis,2," fluid_overload,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," fluid_overload,  yellowish_skin",0.9
+Alcoholic hepatitis,2," swelling_of_stomach,  vomiting",0.9
+Alcoholic hepatitis,2," abdominal_pain,  vomiting",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," abdominal_pain,  yellowish_skin",0.9
+Alcoholic hepatitis,2," abdominal_pain,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," abdominal_pain,  fluid_overload",0.9
+Alcoholic hepatitis,2," abdominal_pain,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," fluid_overload,  swelling_of_stomach",0.9
+Alcoholic hepatitis,2," vomiting,  yellowish_skin",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  vomiting",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  yellowish_skin",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  history_of_alcohol_consumption",0.9
+Alcoholic hepatitis,2," abdominal_pain,  distention_of_abdomen",0.9
+Alcoholic hepatitis,2," history_of_alcohol_consumption,  yellowish_skin",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  vomiting",0.9
+Alcoholic hepatitis,2," distention_of_abdomen,  fluid_overload",0.9
+Alcoholic hepatitis,2," fluid_overload,  vomiting",0.9
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," swelling_of_stomach,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," fluid_overload,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  fluid_overload",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," swelling_of_stomach,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," abdominal_pain,  fluid_overload,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  vomiting",0.85
+Alcoholic hepatitis,3," fluid_overload,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  fluid_overload",0.85
+Alcoholic hepatitis,3," fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  fluid_overload,  swelling_of_stomach",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  history_of_alcohol_consumption,  yellowish_skin",0.85
+Alcoholic hepatitis,3," fluid_overload,  swelling_of_stomach,  vomiting",0.85
+Alcoholic hepatitis,3," history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,3," abdominal_pain,  distention_of_abdomen,  vomiting",0.85
+Alcoholic hepatitis,3," distention_of_abdomen,  vomiting,  yellowish_skin",0.85
+Alcoholic hepatitis,4," distention_of_abdomen,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  fluid_overload,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  vomiting,  yellowish_skin",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  yellowish_skin",0.8
+Alcoholic hepatitis,4," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach",0.8
+Alcoholic hepatitis,4," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.8
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.75
+Alcoholic hepatitis,5," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  yellowish_skin",0.75
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  distention_of_abdomen,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,6," abdominal_pain,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.7
+Alcoholic hepatitis,7," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.65
+Alcoholic hepatitis,7," abdominal_pain,  distention_of_abdomen,  fluid_overload,  history_of_alcohol_consumption,  swelling_of_stomach,  vomiting,  yellowish_skin",0.65
+Chronic cholestasis,1, abdominal_pain,0.95
+Chronic cholestasis,1, loss_of_appetite,0.95
+Chronic cholestasis,1, nausea,0.95
+Chronic cholestasis,1, vomiting,0.95
+Chronic cholestasis,1, yellowing_of_eyes,0.95
+Chronic cholestasis,1, yellowish_skin,0.95
+Chronic cholestasis,1,itching,0.95
+Chronic cholestasis,2," loss_of_appetite,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," yellowing_of_eyes, itching",0.9
+Chronic cholestasis,2," nausea,  vomiting",0.9
+Chronic cholestasis,2," nausea, itching",0.9
+Chronic cholestasis,2," yellowing_of_eyes,  yellowish_skin",0.9
+Chronic cholestasis,2," abdominal_pain,  yellowish_skin",0.9
+Chronic cholestasis,2," vomiting,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," abdominal_pain, itching",0.9
+Chronic cholestasis,2," abdominal_pain,  vomiting",0.9
+Chronic cholestasis,2," abdominal_pain,  nausea",0.9
+Chronic cholestasis,2," abdominal_pain,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," nausea,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," yellowish_skin, itching",0.9
+Chronic cholestasis,2," vomiting,  yellowish_skin",0.9
+Chronic cholestasis,2," loss_of_appetite, itching",0.9
+Chronic cholestasis,2," loss_of_appetite,  vomiting",0.9
+Chronic cholestasis,2," abdominal_pain,  loss_of_appetite",0.9
+Chronic cholestasis,2," vomiting, itching",0.9
+Chronic cholestasis,2," loss_of_appetite,  yellowish_skin",0.9
+Chronic cholestasis,2," loss_of_appetite,  nausea",0.9
+Chronic cholestasis,2," nausea,  yellowish_skin",0.9
+Chronic cholestasis,2," loss_of_appetite,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," yellowing_of_eyes, itching",0.9
+Chronic cholestasis,2," nausea,  vomiting",0.9
+Chronic cholestasis,2," nausea, itching",0.9
+Chronic cholestasis,2," yellowing_of_eyes,  yellowish_skin",0.9
+Chronic cholestasis,2," abdominal_pain,  yellowish_skin",0.9
+Chronic cholestasis,2," vomiting,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," abdominal_pain, itching",0.9
+Chronic cholestasis,2," abdominal_pain,  vomiting",0.9
+Chronic cholestasis,2," abdominal_pain,  nausea",0.9
+Chronic cholestasis,2," abdominal_pain,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," nausea,  yellowing_of_eyes",0.9
+Chronic cholestasis,2," yellowish_skin, itching",0.9
+Chronic cholestasis,2," vomiting,  yellowish_skin",0.9
+Chronic cholestasis,2," loss_of_appetite, itching",0.9
+Chronic cholestasis,2," loss_of_appetite,  vomiting",0.9
+Chronic cholestasis,2," abdominal_pain,  loss_of_appetite",0.9
+Chronic cholestasis,2," vomiting, itching",0.9
+Chronic cholestasis,2," loss_of_appetite,  yellowish_skin",0.9
+Chronic cholestasis,2," loss_of_appetite,  nausea",0.9
+Chronic cholestasis,2," nausea,  yellowish_skin",0.9
+Chronic cholestasis,3," loss_of_appetite,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," nausea,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," yellowing_of_eyes,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," nausea,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  vomiting",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting, itching",0.85
+Chronic cholestasis,3," vomiting,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," nausea,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," nausea,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," vomiting,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  vomiting",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  nausea",0.85
+Chronic cholestasis,3," nausea,  vomiting, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  vomiting",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," loss_of_appetite,  vomiting, itching",0.85
+Chronic cholestasis,3," nausea,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," vomiting,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," nausea,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," yellowing_of_eyes,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," nausea,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea,  vomiting",0.85
+Chronic cholestasis,3," abdominal_pain,  nausea, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting, itching",0.85
+Chronic cholestasis,3," vomiting,  yellowing_of_eyes, itching",0.85
+Chronic cholestasis,3," nausea,  vomiting,  yellowish_skin",0.85
+Chronic cholestasis,3," nausea,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," vomiting,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  vomiting",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  vomiting,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  nausea",0.85
+Chronic cholestasis,3," nausea,  vomiting, itching",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  vomiting",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," loss_of_appetite,  nausea,  yellowing_of_eyes",0.85
+Chronic cholestasis,3," loss_of_appetite,  vomiting, itching",0.85
+Chronic cholestasis,3," nausea,  yellowing_of_eyes,  yellowish_skin",0.85
+Chronic cholestasis,3," vomiting,  yellowish_skin, itching",0.85
+Chronic cholestasis,3," abdominal_pain,  loss_of_appetite,  yellowish_skin",0.85
+Chronic cholestasis,3," loss_of_appetite,  yellowish_skin, itching",0.85
+Chronic cholestasis,4," loss_of_appetite,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  vomiting",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  nausea,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  vomiting, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  yellowish_skin, itching",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting,  yellowish_skin",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  vomiting",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes, itching",0.8
+Chronic cholestasis,4," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes",0.8
+Chronic cholestasis,4," loss_of_appetite,  nausea,  vomiting, itching",0.8
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," loss_of_appetite,  nausea,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  nausea,  vomiting,  yellowish_skin, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowish_skin",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes, itching",0.75
+Chronic cholestasis,5," abdominal_pain,  loss_of_appetite,  nausea,  vomiting, itching",0.75
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  loss_of_appetite,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,6," abdominal_pain,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.7
+Chronic cholestasis,7," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.65
+Chronic cholestasis,7," abdominal_pain,  loss_of_appetite,  nausea,  vomiting,  yellowing_of_eyes,  yellowish_skin, itching",0.65
+Jaundice,1, abdominal_pain,0.95
+Jaundice,1, dark_urine,0.95
+Jaundice,1, fatigue,0.95
+Jaundice,1, high_fever,0.95
+Jaundice,1, vomiting,0.95
+Jaundice,1, weight_loss,0.95
+Jaundice,1, yellowish_skin,0.95
+Jaundice,1,itching,0.95
+Jaundice,2," dark_urine,  vomiting",0.9
+Jaundice,2," vomiting,  yellowish_skin",0.9
+Jaundice,2," fatigue,  high_fever",0.9
+Jaundice,2," fatigue,  yellowish_skin",0.9
+Jaundice,2," vomiting,  weight_loss",0.9
+Jaundice,2," abdominal_pain,  weight_loss",0.9
+Jaundice,2," high_fever,  vomiting",0.9
+Jaundice,2," abdominal_pain,  yellowish_skin",0.9
+Jaundice,2," dark_urine, itching",0.9
+Jaundice,2," abdominal_pain,  high_fever",0.9
+Jaundice,2," abdominal_pain,  fatigue",0.9
+Jaundice,2," abdominal_pain,  vomiting",0.9
+Jaundice,2," fatigue,  vomiting",0.9
+Jaundice,2," weight_loss,  yellowish_skin",0.9
+Jaundice,2," high_fever,  weight_loss",0.9
+Jaundice,2," dark_urine,  yellowish_skin",0.9
+Jaundice,2," abdominal_pain, itching",0.9
+Jaundice,2," dark_urine,  high_fever",0.9
+Jaundice,2," vomiting, itching",0.9
+Jaundice,2," high_fever, itching",0.9
+Jaundice,2," abdominal_pain,  dark_urine",0.9
+Jaundice,2," high_fever,  yellowish_skin",0.9
+Jaundice,2," yellowish_skin, itching",0.9
+Jaundice,2," dark_urine,  weight_loss",0.9
+Jaundice,2," fatigue, itching",0.9
+Jaundice,2," weight_loss, itching",0.9
+Jaundice,2," dark_urine,  fatigue",0.9
+Jaundice,2," fatigue,  weight_loss",0.9
+Jaundice,2," dark_urine,  vomiting",0.9
+Jaundice,2," vomiting,  yellowish_skin",0.9
+Jaundice,2," fatigue,  high_fever",0.9
+Jaundice,2," fatigue,  yellowish_skin",0.9
+Jaundice,2," vomiting,  weight_loss",0.9
+Jaundice,2," abdominal_pain,  weight_loss",0.9
+Jaundice,2," high_fever,  vomiting",0.9
+Jaundice,2," abdominal_pain,  yellowish_skin",0.9
+Jaundice,2," dark_urine, itching",0.9
+Jaundice,2," abdominal_pain,  high_fever",0.9
+Jaundice,2," abdominal_pain,  fatigue",0.9
+Jaundice,2," abdominal_pain,  vomiting",0.9
+Jaundice,2," fatigue,  vomiting",0.9
+Jaundice,2," weight_loss,  yellowish_skin",0.9
+Jaundice,2," high_fever,  weight_loss",0.9
+Jaundice,2," dark_urine,  yellowish_skin",0.9
+Jaundice,2," abdominal_pain, itching",0.9
+Jaundice,2," dark_urine,  high_fever",0.9
+Jaundice,2," vomiting, itching",0.9
+Jaundice,2," high_fever, itching",0.9
+Jaundice,2," abdominal_pain,  dark_urine",0.9
+Jaundice,2," high_fever,  yellowish_skin",0.9
+Jaundice,2," yellowish_skin, itching",0.9
+Jaundice,2," dark_urine,  weight_loss",0.9
+Jaundice,2," fatigue, itching",0.9
+Jaundice,2," weight_loss, itching",0.9
+Jaundice,2," dark_urine,  fatigue",0.9
+Jaundice,2," fatigue,  weight_loss",0.9
+Jaundice,3," dark_urine,  high_fever,  weight_loss",0.85
+Jaundice,3," fatigue,  high_fever,  vomiting",0.85
+Jaundice,3," abdominal_pain,  dark_urine, itching",0.85
+Jaundice,3," abdominal_pain,  fatigue,  weight_loss",0.85
+Jaundice,3," abdominal_pain,  fatigue,  vomiting",0.85
+Jaundice,3," abdominal_pain,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  weight_loss",0.85
+Jaundice,3," vomiting,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  vomiting,  yellowish_skin",0.85
+Jaundice,3," fatigue,  vomiting,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  vomiting, itching",0.85
+Jaundice,3," dark_urine,  vomiting, itching",0.85
+Jaundice,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  fatigue,  high_fever",0.85
+Jaundice,3," abdominal_pain,  fatigue,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  vomiting,  weight_loss",0.85
+Jaundice,3," dark_urine,  fatigue, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  high_fever, itching",0.85
+Jaundice,3," dark_urine,  yellowish_skin, itching",0.85
+Jaundice,3," high_fever,  vomiting,  yellowish_skin",0.85
+Jaundice,3," fatigue,  high_fever,  weight_loss",0.85
+Jaundice,3," fatigue,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," high_fever,  vomiting,  weight_loss",0.85
+Jaundice,3," dark_urine,  fatigue,  high_fever",0.85
+Jaundice,3," dark_urine,  fatigue,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  high_fever,  vomiting",0.85
+Jaundice,3," abdominal_pain,  fatigue, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  vomiting",0.85
+Jaundice,3," high_fever,  vomiting, itching",0.85
+Jaundice,3," fatigue,  yellowish_skin, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  fatigue",0.85
+Jaundice,3," fatigue,  high_fever, itching",0.85
+Jaundice,3," fatigue,  high_fever,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  fatigue,  weight_loss",0.85
+Jaundice,3," dark_urine,  vomiting,  weight_loss",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  high_fever",0.85
+Jaundice,3," fatigue,  vomiting, itching",0.85
+Jaundice,3," vomiting,  weight_loss, itching",0.85
+Jaundice,3," high_fever,  yellowish_skin, itching",0.85
+Jaundice,3," fatigue,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  vomiting",0.85
+Jaundice,3," vomiting,  yellowish_skin, itching",0.85
+Jaundice,3," dark_urine,  fatigue,  vomiting",0.85
+Jaundice,3," abdominal_pain,  high_fever, itching",0.85
+Jaundice,3," dark_urine,  high_fever,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  yellowish_skin, itching",0.85
+Jaundice,3," fatigue,  vomiting,  weight_loss",0.85
+Jaundice,3," high_fever,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," high_fever,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  weight_loss",0.85
+Jaundice,3," weight_loss,  yellowish_skin, itching",0.85
+Jaundice,3," dark_urine,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  weight_loss, itching",0.85
+Jaundice,3," dark_urine,  high_fever,  weight_loss",0.85
+Jaundice,3," fatigue,  high_fever,  vomiting",0.85
+Jaundice,3," abdominal_pain,  dark_urine, itching",0.85
+Jaundice,3," abdominal_pain,  fatigue,  weight_loss",0.85
+Jaundice,3," abdominal_pain,  fatigue,  vomiting",0.85
+Jaundice,3," abdominal_pain,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  weight_loss",0.85
+Jaundice,3," vomiting,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  vomiting,  yellowish_skin",0.85
+Jaundice,3," fatigue,  vomiting,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  vomiting, itching",0.85
+Jaundice,3," dark_urine,  vomiting, itching",0.85
+Jaundice,3," abdominal_pain,  vomiting,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  fatigue,  high_fever",0.85
+Jaundice,3," abdominal_pain,  fatigue,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  vomiting,  weight_loss",0.85
+Jaundice,3," dark_urine,  fatigue, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  high_fever, itching",0.85
+Jaundice,3," dark_urine,  yellowish_skin, itching",0.85
+Jaundice,3," high_fever,  vomiting,  yellowish_skin",0.85
+Jaundice,3," fatigue,  high_fever,  weight_loss",0.85
+Jaundice,3," fatigue,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," high_fever,  vomiting,  weight_loss",0.85
+Jaundice,3," dark_urine,  fatigue,  high_fever",0.85
+Jaundice,3," dark_urine,  fatigue,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  high_fever,  vomiting",0.85
+Jaundice,3," abdominal_pain,  fatigue, itching",0.85
+Jaundice,3," abdominal_pain,  high_fever,  vomiting",0.85
+Jaundice,3," high_fever,  vomiting, itching",0.85
+Jaundice,3," fatigue,  yellowish_skin, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  fatigue",0.85
+Jaundice,3," fatigue,  high_fever, itching",0.85
+Jaundice,3," fatigue,  high_fever,  yellowish_skin",0.85
+Jaundice,3," dark_urine,  fatigue,  weight_loss",0.85
+Jaundice,3," dark_urine,  vomiting,  weight_loss",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  high_fever",0.85
+Jaundice,3," fatigue,  vomiting, itching",0.85
+Jaundice,3," vomiting,  weight_loss, itching",0.85
+Jaundice,3," high_fever,  yellowish_skin, itching",0.85
+Jaundice,3," fatigue,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  vomiting",0.85
+Jaundice,3," vomiting,  yellowish_skin, itching",0.85
+Jaundice,3," dark_urine,  fatigue,  vomiting",0.85
+Jaundice,3," abdominal_pain,  high_fever, itching",0.85
+Jaundice,3," dark_urine,  high_fever,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  yellowish_skin, itching",0.85
+Jaundice,3," fatigue,  vomiting,  weight_loss",0.85
+Jaundice,3," high_fever,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," high_fever,  weight_loss, itching",0.85
+Jaundice,3," abdominal_pain,  dark_urine,  weight_loss",0.85
+Jaundice,3," weight_loss,  yellowish_skin, itching",0.85
+Jaundice,3," dark_urine,  weight_loss,  yellowish_skin",0.85
+Jaundice,3," abdominal_pain,  weight_loss, itching",0.85
+Jaundice,4," abdominal_pain,  fatigue,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting, itching",0.8
+Jaundice,4," high_fever,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  vomiting",0.8
+Jaundice,4," abdominal_pain,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  fatigue,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting,  weight_loss",0.8
+Jaundice,4," vomiting,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting,  weight_loss",0.8
+Jaundice,4," fatigue,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  weight_loss",0.8
+Jaundice,4," high_fever,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," fatigue,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  vomiting",0.8
+Jaundice,4," high_fever,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," fatigue,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  vomiting",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  weight_loss",0.8
+Jaundice,4," fatigue,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting, itching",0.8
+Jaundice,4," high_fever,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  fatigue,  weight_loss, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  high_fever",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting,  yellowish_skin",0.8
+Jaundice,4," fatigue,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  vomiting",0.8
+Jaundice,4," abdominal_pain,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  vomiting, itching",0.8
+Jaundice,4," high_fever,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  vomiting",0.8
+Jaundice,4," abdominal_pain,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  fatigue,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  vomiting,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting, itching",0.8
+Jaundice,4," abdominal_pain,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  vomiting,  weight_loss",0.8
+Jaundice,4," vomiting,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting,  weight_loss",0.8
+Jaundice,4," fatigue,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  weight_loss",0.8
+Jaundice,4," high_fever,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," fatigue,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  weight_loss, itching",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  vomiting",0.8
+Jaundice,4," high_fever,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," fatigue,  high_fever,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  vomiting",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  weight_loss",0.8
+Jaundice,4," fatigue,  weight_loss,  yellowish_skin, itching",0.8
+Jaundice,4," fatigue,  high_fever,  vomiting, itching",0.8
+Jaundice,4," high_fever,  vomiting,  weight_loss, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  high_fever,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  high_fever,  vomiting,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  fatigue,  weight_loss, itching",0.8
+Jaundice,4," dark_urine,  fatigue,  weight_loss,  yellowish_skin",0.8
+Jaundice,4," dark_urine,  fatigue,  high_fever,  weight_loss",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  yellowish_skin",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  high_fever",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  vomiting,  yellowish_skin",0.8
+Jaundice,4," fatigue,  high_fever,  yellowish_skin, itching",0.8
+Jaundice,4," dark_urine,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  dark_urine,  fatigue,  vomiting",0.8
+Jaundice,4," abdominal_pain,  vomiting,  yellowish_skin, itching",0.8
+Jaundice,4," abdominal_pain,  fatigue,  high_fever, itching",0.8
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  vomiting, itching",0.75
+Jaundice,5," dark_urine,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss",0.75
+Jaundice,5," fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  vomiting,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  vomiting, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," dark_urine,  high_fever,  vomiting,  weight_loss, itching",0.75
+Jaundice,5," dark_urine,  vomiting,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," abdominal_pain,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.75
+Jaundice,5," fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.75
+Jaundice,5," dark_urine,  fatigue,  high_fever,  weight_loss, itching",0.75
+Jaundice,5," abdominal_pain,  dark_urine,  fatigue,  high_fever,  yellowish_skin",0.75
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss",0.7
+Jaundice,6," fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss",0.7
+Jaundice,6," fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  high_fever,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss, itching",0.7
+Jaundice,6," abdominal_pain,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," abdominal_pain,  dark_urine,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,6," dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.7
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.65
+Jaundice,7," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin",0.65
+Jaundice,7," dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss, itching",0.65
+Jaundice,7," abdominal_pain,  dark_urine,  fatigue,  vomiting,  weight_loss,  yellowish_skin, itching",0.65
+Jaundice,8," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.6
+Jaundice,8," abdominal_pain,  dark_urine,  fatigue,  high_fever,  vomiting,  weight_loss,  yellowish_skin, itching",0.6
+Malaria,1, chills,0.95
+Malaria,1, diarrhoea,0.9
+Malaria,1, headache,0.95
+Malaria,1, high_fever,0.95
+Malaria,1, muscle_pain,1.0
+Malaria,1, nausea,0.95
+Malaria,1, sweating,0.95
+Malaria,1, vomiting,0.95
+Malaria,2," diarrhoea,  muscle_pain",0.9
+Malaria,2," muscle_pain,  sweating",0.95
+Malaria,2," headache,  high_fever",0.9
+Malaria,2," headache,  sweating",0.9
+Malaria,2," muscle_pain,  nausea",0.95
+Malaria,2," chills,  nausea",0.9
+Malaria,2," high_fever,  muscle_pain",0.95
+Malaria,2," chills,  sweating",0.9
+Malaria,2," diarrhoea,  vomiting",0.85
+Malaria,2," chills,  high_fever",0.9
+Malaria,2," chills,  headache",0.9
+Malaria,2," chills,  muscle_pain",0.95
+Malaria,2," headache,  muscle_pain",0.95
+Malaria,2," nausea,  sweating",0.9
+Malaria,2," high_fever,  nausea",0.9
+Malaria,2," diarrhoea,  sweating",0.85
+Malaria,2," chills,  vomiting",0.9
+Malaria,2," diarrhoea,  high_fever",0.85
+Malaria,2," muscle_pain,  vomiting",0.95
+Malaria,2," high_fever,  vomiting",0.9
+Malaria,2," chills,  diarrhoea",0.85
+Malaria,2," high_fever,  sweating",0.9
+Malaria,2," sweating,  vomiting",0.9
+Malaria,2," diarrhoea,  nausea",0.85
+Malaria,2," headache,  vomiting",0.9
+Malaria,2," nausea,  vomiting",0.9
+Malaria,2," diarrhoea,  headache",0.85
+Malaria,2," headache,  nausea",0.9
+Malaria,2," diarrhoea,  muscle_pain",0.9
+Malaria,2," muscle_pain,  sweating",0.95
+Malaria,2," headache,  high_fever",0.9
+Malaria,2," headache,  sweating",0.9
+Malaria,2," muscle_pain,  nausea",0.95
+Malaria,2," chills,  nausea",0.9
+Malaria,2," high_fever,  muscle_pain",0.95
+Malaria,2," chills,  sweating",0.9
+Malaria,2," diarrhoea,  vomiting",0.85
+Malaria,2," chills,  high_fever",0.9
+Malaria,2," chills,  headache",0.9
+Malaria,2," chills,  muscle_pain",0.95
+Malaria,2," headache,  muscle_pain",0.95
+Malaria,2," nausea,  sweating",0.9
+Malaria,2," high_fever,  nausea",0.9
+Malaria,2," diarrhoea,  sweating",0.85
+Malaria,2," chills,  vomiting",0.9
+Malaria,2," diarrhoea,  high_fever",0.85
+Malaria,2," muscle_pain,  vomiting",0.95
+Malaria,2," high_fever,  vomiting",0.9
+Malaria,2," chills,  diarrhoea",0.85
+Malaria,2," high_fever,  sweating",0.9
+Malaria,2," sweating,  vomiting",0.9
+Malaria,2," diarrhoea,  nausea",0.85
+Malaria,2," headache,  vomiting",0.9
+Malaria,2," nausea,  vomiting",0.9
+Malaria,2," diarrhoea,  headache",0.85
+Malaria,2," headache,  nausea",0.9
+Malaria,3," diarrhoea,  high_fever,  nausea",0.8
+Malaria,3," headache,  high_fever,  muscle_pain",0.9
+Malaria,3," chills,  diarrhoea,  vomiting",0.8
+Malaria,3," chills,  headache,  nausea",0.85
+Malaria,3," chills,  headache,  muscle_pain",0.9
+Malaria,3," chills,  nausea,  sweating",0.85
+Malaria,3," diarrhoea,  nausea,  vomiting",0.8
+Malaria,3," chills,  high_fever,  nausea",0.85
+Malaria,3," muscle_pain,  nausea,  sweating",0.9
+Malaria,3," diarrhoea,  muscle_pain,  sweating",0.85
+Malaria,3," headache,  muscle_pain,  sweating",0.9
+Malaria,3," chills,  muscle_pain,  vomiting",0.9
+Malaria,3," diarrhoea,  muscle_pain,  vomiting",0.85
+Malaria,3," chills,  muscle_pain,  sweating",0.9
+Malaria,3," chills,  headache,  high_fever",0.85
+Malaria,3," chills,  headache,  sweating",0.85
+Malaria,3," chills,  muscle_pain,  nausea",0.9
+Malaria,3," diarrhoea,  headache,  vomiting",0.8
+Malaria,3," chills,  high_fever,  sweating",0.85
+Malaria,3," diarrhoea,  high_fever,  vomiting",0.8
+Malaria,3," diarrhoea,  sweating,  vomiting",0.8
+Malaria,3," high_fever,  muscle_pain,  sweating",0.9
+Malaria,3," headache,  high_fever,  nausea",0.85
+Malaria,3," headache,  nausea,  sweating",0.85
+Malaria,3," high_fever,  muscle_pain,  nausea",0.9
+Malaria,3," diarrhoea,  headache,  high_fever",0.8
+Malaria,3," diarrhoea,  headache,  sweating",0.8
+Malaria,3," diarrhoea,  high_fever,  muscle_pain",0.85
+Malaria,3," chills,  headache,  vomiting",0.85
+Malaria,3," chills,  high_fever,  muscle_pain",0.9
+Malaria,3," high_fever,  muscle_pain,  vomiting",0.9
+Malaria,3," headache,  sweating,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  headache",0.8
+Malaria,3," headache,  high_fever,  vomiting",0.85
+Malaria,3," headache,  high_fever,  sweating",0.85
+Malaria,3," diarrhoea,  headache,  nausea",0.8
+Malaria,3," diarrhoea,  muscle_pain,  nausea",0.85
+Malaria,3," chills,  diarrhoea,  sweating",0.8
+Malaria,3," chills,  diarrhoea,  high_fever",0.8
+Malaria,3," headache,  muscle_pain,  vomiting",0.9
+Malaria,3," muscle_pain,  nausea,  vomiting",0.9
+Malaria,3," high_fever,  sweating,  vomiting",0.85
+Malaria,3," headache,  nausea,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  muscle_pain",0.85
+Malaria,3," muscle_pain,  sweating,  vomiting",0.9
+Malaria,3," diarrhoea,  headache,  muscle_pain",0.85
+Malaria,3," chills,  high_fever,  vomiting",0.85
+Malaria,3," diarrhoea,  high_fever,  sweating",0.8
+Malaria,3," chills,  sweating,  vomiting",0.85
+Malaria,3," headache,  muscle_pain,  nausea",0.9
+Malaria,3," high_fever,  nausea,  sweating",0.85
+Malaria,3," high_fever,  nausea,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  nausea",0.8
+Malaria,3," nausea,  sweating,  vomiting",0.85
+Malaria,3," diarrhoea,  nausea,  sweating",0.8
+Malaria,3," chills,  nausea,  vomiting",0.85
+Malaria,3," diarrhoea,  high_fever,  nausea",0.8
+Malaria,3," headache,  high_fever,  muscle_pain",0.9
+Malaria,3," chills,  diarrhoea,  vomiting",0.8
+Malaria,3," chills,  headache,  nausea",0.85
+Malaria,3," chills,  headache,  muscle_pain",0.9
+Malaria,3," chills,  nausea,  sweating",0.85
+Malaria,3," diarrhoea,  nausea,  vomiting",0.8
+Malaria,3," chills,  high_fever,  nausea",0.85
+Malaria,3," muscle_pain,  nausea,  sweating",0.9
+Malaria,3," diarrhoea,  muscle_pain,  sweating",0.85
+Malaria,3," headache,  muscle_pain,  sweating",0.9
+Malaria,3," chills,  muscle_pain,  vomiting",0.9
+Malaria,3," diarrhoea,  muscle_pain,  vomiting",0.85
+Malaria,3," chills,  muscle_pain,  sweating",0.9
+Malaria,3," chills,  headache,  high_fever",0.85
+Malaria,3," chills,  headache,  sweating",0.85
+Malaria,3," chills,  muscle_pain,  nausea",0.9
+Malaria,3," diarrhoea,  headache,  vomiting",0.8
+Malaria,3," chills,  high_fever,  sweating",0.85
+Malaria,3," diarrhoea,  high_fever,  vomiting",0.8
+Malaria,3," diarrhoea,  sweating,  vomiting",0.8
+Malaria,3," high_fever,  muscle_pain,  sweating",0.9
+Malaria,3," headache,  high_fever,  nausea",0.85
+Malaria,3," headache,  nausea,  sweating",0.85
+Malaria,3," high_fever,  muscle_pain,  nausea",0.9
+Malaria,3," diarrhoea,  headache,  high_fever",0.8
+Malaria,3," diarrhoea,  headache,  sweating",0.8
+Malaria,3," diarrhoea,  high_fever,  muscle_pain",0.85
+Malaria,3," chills,  headache,  vomiting",0.85
+Malaria,3," chills,  high_fever,  muscle_pain",0.9
+Malaria,3," high_fever,  muscle_pain,  vomiting",0.9
+Malaria,3," headache,  sweating,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  headache",0.8
+Malaria,3," headache,  high_fever,  vomiting",0.85
+Malaria,3," headache,  high_fever,  sweating",0.85
+Malaria,3," diarrhoea,  headache,  nausea",0.8
+Malaria,3," diarrhoea,  muscle_pain,  nausea",0.85
+Malaria,3," chills,  diarrhoea,  sweating",0.8
+Malaria,3," chills,  diarrhoea,  high_fever",0.8
+Malaria,3," headache,  muscle_pain,  vomiting",0.9
+Malaria,3," muscle_pain,  nausea,  vomiting",0.9
+Malaria,3," high_fever,  sweating,  vomiting",0.85
+Malaria,3," headache,  nausea,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  muscle_pain",0.85
+Malaria,3," muscle_pain,  sweating,  vomiting",0.9
+Malaria,3," diarrhoea,  headache,  muscle_pain",0.85
+Malaria,3," chills,  high_fever,  vomiting",0.85
+Malaria,3," diarrhoea,  high_fever,  sweating",0.8
+Malaria,3," chills,  sweating,  vomiting",0.85
+Malaria,3," headache,  muscle_pain,  nausea",0.9
+Malaria,3," high_fever,  nausea,  sweating",0.85
+Malaria,3," high_fever,  nausea,  vomiting",0.85
+Malaria,3," chills,  diarrhoea,  nausea",0.8
+Malaria,3," nausea,  sweating,  vomiting",0.85
+Malaria,3," diarrhoea,  nausea,  sweating",0.8
+Malaria,3," chills,  nausea,  vomiting",0.85
+Malaria,4," chills,  headache,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  muscle_pain,  nausea,  sweating",0.8
+Malaria,4," chills,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," headache,  high_fever,  nausea,  sweating",0.8
+Malaria,4," chills,  diarrhoea,  muscle_pain,  vomiting",0.8
+Malaria,4," chills,  headache,  muscle_pain,  sweating",0.85
+Malaria,4," diarrhoea,  headache,  muscle_pain,  vomiting",0.8
+Malaria,4," diarrhoea,  high_fever,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  headache,  high_fever,  sweating",0.75
+Malaria,4," chills,  high_fever,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  headache,  high_fever,  sweating",0.8
+Malaria,4," diarrhoea,  headache,  high_fever,  vomiting",0.75
+Malaria,4," diarrhoea,  headache,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  vomiting",0.8
+Malaria,4," chills,  high_fever,  muscle_pain,  sweating",0.85
+Malaria,4," headache,  high_fever,  muscle_pain,  sweating",0.85
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  sweating",0.8
+Malaria,4," chills,  high_fever,  muscle_pain,  vomiting",0.85
+Malaria,4," high_fever,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," diarrhoea,  nausea,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  high_fever,  nausea,  vomiting",0.75
+Malaria,4," chills,  headache,  high_fever,  muscle_pain",0.85
+Malaria,4," chills,  high_fever,  nausea,  sweating",0.8
+Malaria,4," chills,  headache,  nausea,  sweating",0.8
+Malaria,4," diarrhoea,  headache,  nausea,  vomiting",0.75
+Malaria,4," chills,  headache,  high_fever,  nausea",0.8
+Malaria,4," chills,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," diarrhoea,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,4," headache,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," chills,  diarrhoea,  sweating,  vomiting",0.75
+Malaria,4," chills,  diarrhoea,  high_fever,  vomiting",0.75
+Malaria,4," chills,  headache,  muscle_pain,  vomiting",0.85
+Malaria,4," chills,  nausea,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  muscle_pain,  sweating",0.8
+Malaria,4," diarrhoea,  high_fever,  nausea,  sweating",0.75
+Malaria,4," chills,  high_fever,  nausea,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  muscle_pain,  nausea",0.8
+Malaria,4," muscle_pain,  nausea,  sweating,  vomiting",0.85
+Malaria,4," chills,  headache,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  diarrhoea,  muscle_pain,  nausea",0.8
+Malaria,4," headache,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  high_fever,  nausea",0.75
+Malaria,4," high_fever,  nausea,  sweating,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  nausea,  sweating",0.75
+Malaria,4," headache,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  nausea,  vomiting",0.75
+Malaria,4," headache,  high_fever,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  high_fever,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  high_fever,  muscle_pain",0.8
+Malaria,4," high_fever,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," headache,  high_fever,  nausea,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  high_fever,  muscle_pain",0.8
+Malaria,4," chills,  diarrhoea,  headache,  nausea",0.75
+Malaria,4," headache,  nausea,  sweating,  vomiting",0.8
+Malaria,4," headache,  high_fever,  muscle_pain,  vomiting",0.85
+Malaria,4," high_fever,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  high_fever,  sweating",0.75
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  nausea",0.8
+Malaria,4," chills,  headache,  nausea,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  nausea,  sweating",0.75
+Malaria,4," diarrhoea,  headache,  high_fever,  nausea",0.75
+Malaria,4," chills,  diarrhoea,  headache,  vomiting",0.75
+Malaria,4," chills,  diarrhoea,  headache,  sweating",0.75
+Malaria,4," chills,  diarrhoea,  headache,  high_fever",0.75
+Malaria,4," chills,  diarrhoea,  muscle_pain,  sweating",0.8
+Malaria,4," headache,  high_fever,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  headache,  muscle_pain",0.8
+Malaria,4," chills,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," chills,  headache,  high_fever,  vomiting",0.8
+Malaria,4," chills,  headache,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  muscle_pain,  nausea,  sweating",0.8
+Malaria,4," chills,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," headache,  high_fever,  nausea,  sweating",0.8
+Malaria,4," chills,  diarrhoea,  muscle_pain,  vomiting",0.8
+Malaria,4," chills,  headache,  muscle_pain,  sweating",0.85
+Malaria,4," diarrhoea,  headache,  muscle_pain,  vomiting",0.8
+Malaria,4," diarrhoea,  high_fever,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  headache,  high_fever,  sweating",0.75
+Malaria,4," chills,  high_fever,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  headache,  high_fever,  sweating",0.8
+Malaria,4," diarrhoea,  headache,  high_fever,  vomiting",0.75
+Malaria,4," diarrhoea,  headache,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  vomiting",0.8
+Malaria,4," chills,  high_fever,  muscle_pain,  sweating",0.85
+Malaria,4," headache,  high_fever,  muscle_pain,  sweating",0.85
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  sweating",0.8
+Malaria,4," chills,  high_fever,  muscle_pain,  vomiting",0.85
+Malaria,4," high_fever,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," diarrhoea,  nausea,  sweating,  vomiting",0.75
+Malaria,4," diarrhoea,  high_fever,  nausea,  vomiting",0.75
+Malaria,4," chills,  headache,  high_fever,  muscle_pain",0.85
+Malaria,4," chills,  high_fever,  nausea,  sweating",0.8
+Malaria,4," chills,  headache,  nausea,  sweating",0.8
+Malaria,4," diarrhoea,  headache,  nausea,  vomiting",0.75
+Malaria,4," chills,  headache,  high_fever,  nausea",0.8
+Malaria,4," chills,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," diarrhoea,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,4," headache,  muscle_pain,  nausea,  sweating",0.85
+Malaria,4," chills,  diarrhoea,  sweating,  vomiting",0.75
+Malaria,4," chills,  diarrhoea,  high_fever,  vomiting",0.75
+Malaria,4," chills,  headache,  muscle_pain,  vomiting",0.85
+Malaria,4," chills,  nausea,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  muscle_pain,  sweating",0.8
+Malaria,4," diarrhoea,  high_fever,  nausea,  sweating",0.75
+Malaria,4," chills,  high_fever,  nausea,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  muscle_pain,  nausea",0.8
+Malaria,4," muscle_pain,  nausea,  sweating,  vomiting",0.85
+Malaria,4," chills,  headache,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  diarrhoea,  muscle_pain,  nausea",0.8
+Malaria,4," headache,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  high_fever,  nausea",0.75
+Malaria,4," high_fever,  nausea,  sweating,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  nausea,  sweating",0.75
+Malaria,4," headache,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  nausea,  vomiting",0.75
+Malaria,4," headache,  high_fever,  muscle_pain,  nausea",0.85
+Malaria,4," chills,  high_fever,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  high_fever,  muscle_pain",0.8
+Malaria,4," high_fever,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," headache,  high_fever,  nausea,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  high_fever,  muscle_pain",0.8
+Malaria,4," chills,  diarrhoea,  headache,  nausea",0.75
+Malaria,4," headache,  nausea,  sweating,  vomiting",0.8
+Malaria,4," headache,  high_fever,  muscle_pain,  vomiting",0.85
+Malaria,4," high_fever,  muscle_pain,  nausea,  vomiting",0.85
+Malaria,4," chills,  diarrhoea,  high_fever,  sweating",0.75
+Malaria,4," diarrhoea,  high_fever,  muscle_pain,  nausea",0.8
+Malaria,4," chills,  headache,  nausea,  vomiting",0.8
+Malaria,4," diarrhoea,  headache,  nausea,  sweating",0.75
+Malaria,4," diarrhoea,  headache,  high_fever,  nausea",0.75
+Malaria,4," chills,  diarrhoea,  headache,  vomiting",0.75
+Malaria,4," chills,  diarrhoea,  headache,  sweating",0.75
+Malaria,4," chills,  diarrhoea,  headache,  high_fever",0.75
+Malaria,4," chills,  diarrhoea,  muscle_pain,  sweating",0.8
+Malaria,4," headache,  high_fever,  sweating,  vomiting",0.8
+Malaria,4," diarrhoea,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,4," chills,  diarrhoea,  headache,  muscle_pain",0.8
+Malaria,4," chills,  muscle_pain,  sweating,  vomiting",0.85
+Malaria,4," chills,  headache,  high_fever,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  vomiting",0.7
+Malaria,5," chills,  headache,  high_fever,  sweating,  vomiting",0.75
+Malaria,5," chills,  high_fever,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea",0.75
+Malaria,5," high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  nausea,  sweating",0.7
+Malaria,5," chills,  headache,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  vomiting",0.8
+Malaria,5," chills,  headache,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  high_fever,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  muscle_pain",0.75
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  nausea",0.8
+Malaria,5," chills,  headache,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," diarrhoea,  headache,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea",0.75
+Malaria,5," diarrhoea,  headache,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  headache,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," chills,  high_fever,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  nausea,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  high_fever,  nausea,  sweating",0.7
+Malaria,5," chills,  headache,  high_fever,  nausea,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  nausea,  sweating",0.7
+Malaria,5," headache,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  nausea",0.75
+Malaria,5," headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," diarrhoea,  headache,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  sweating",0.8
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  vomiting",0.75
+Malaria,5," diarrhoea,  high_fever,  nausea,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  nausea",0.7
+Malaria,5," headache,  high_fever,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," chills,  diarrhoea,  nausea,  sweating,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  nausea,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  headache,  nausea,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  sweating,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  high_fever,  sweating,  vomiting",0.7
+Malaria,5," chills,  high_fever,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," diarrhoea,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  headache,  high_fever,  nausea,  sweating",0.75
+Malaria,5," headache,  high_fever,  nausea,  sweating,  vomiting",0.75
+Malaria,5," diarrhoea,  headache,  high_fever,  nausea,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  sweating",0.7
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  vomiting",0.7
+Malaria,5," chills,  headache,  high_fever,  sweating,  vomiting",0.75
+Malaria,5," chills,  high_fever,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea",0.75
+Malaria,5," high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  nausea,  sweating",0.7
+Malaria,5," chills,  headache,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  vomiting",0.8
+Malaria,5," chills,  headache,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  high_fever,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  muscle_pain",0.75
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  nausea",0.8
+Malaria,5," chills,  headache,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," diarrhoea,  headache,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea",0.75
+Malaria,5," diarrhoea,  headache,  muscle_pain,  nausea,  sweating",0.75
+Malaria,5," chills,  headache,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," chills,  high_fever,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  nausea,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  high_fever,  nausea,  sweating",0.7
+Malaria,5," chills,  headache,  high_fever,  nausea,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  nausea,  sweating",0.7
+Malaria,5," headache,  muscle_pain,  nausea,  sweating,  vomiting",0.8
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  nausea",0.75
+Malaria,5," headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.8
+Malaria,5," diarrhoea,  headache,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  headache,  high_fever,  muscle_pain,  sweating",0.8
+Malaria,5," diarrhoea,  headache,  high_fever,  muscle_pain,  vomiting",0.75
+Malaria,5," diarrhoea,  high_fever,  nausea,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  sweating",0.75
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  nausea",0.7
+Malaria,5," headache,  high_fever,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," chills,  diarrhoea,  nausea,  sweating,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  nausea,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  sweating,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  high_fever,  muscle_pain,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  headache,  nausea,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  muscle_pain,  vomiting",0.75
+Malaria,5," chills,  diarrhoea,  high_fever,  sweating,  vomiting",0.7
+Malaria,5," diarrhoea,  headache,  high_fever,  sweating,  vomiting",0.7
+Malaria,5," chills,  high_fever,  muscle_pain,  nausea,  sweating",0.8
+Malaria,5," diarrhoea,  high_fever,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,5," diarrhoea,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,5," chills,  headache,  high_fever,  nausea,  sweating",0.75
+Malaria,5," headache,  high_fever,  nausea,  sweating,  vomiting",0.75
+Malaria,5," diarrhoea,  headache,  high_fever,  nausea,  vomiting",0.7
+Malaria,5," chills,  diarrhoea,  headache,  high_fever,  sweating",0.7
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  nausea,  sweating,  vomiting",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.75
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  sweating",0.7
+Malaria,6," chills,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  nausea,  sweating",0.65
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  sweating,  vomiting",0.65
+Malaria,6," diarrhoea,  headache,  high_fever,  nausea,  sweating,  vomiting",0.65
+Malaria,6," diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  nausea,  sweating,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  nausea,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea",0.7
+Malaria,6," headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  high_fever,  nausea,  sweating,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,6," diarrhoea,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  nausea,  sweating,  vomiting",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.75
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating",0.7
+Malaria,6," chills,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.75
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  sweating",0.7
+Malaria,6," chills,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  nausea,  sweating",0.65
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  sweating,  vomiting",0.65
+Malaria,6," diarrhoea,  headache,  high_fever,  nausea,  sweating,  vomiting",0.65
+Malaria,6," diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  nausea,  sweating,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  nausea,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  high_fever,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," diarrhoea,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.7
+Malaria,6," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea",0.7
+Malaria,6," headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  high_fever,  nausea,  sweating,  vomiting",0.65
+Malaria,6," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  vomiting",0.7
+Malaria,6," chills,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.75
+Malaria,6," chills,  diarrhoea,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,6," diarrhoea,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.65
+Malaria,7," chills,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  nausea,  sweating,  vomiting",0.6
+Malaria,7," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.65
+Malaria,7," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  sweating,  vomiting",0.65
+Malaria,7," chills,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.7
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  nausea,  sweating,  vomiting",0.6
+Malaria,7," chills,  diarrhoea,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating",0.65
+Malaria,7," diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  vomiting",0.65
+Malaria,7," chills,  diarrhoea,  headache,  muscle_pain,  nausea,  sweating,  vomiting",0.65
+Malaria,8," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.6
+Malaria,8," chills,  diarrhoea,  headache,  high_fever,  muscle_pain,  nausea,  sweating,  vomiting",0.6
+Varicose veins,1, bruising,0.95
+Varicose veins,1, cramps,0.95
+Varicose veins,1, fatigue,0.95
+Varicose veins,1, obesity,0.95
+Varicose veins,1, prominent_veins_on_calf,0.95
+Varicose veins,1, swollen_blood_vessels,0.9
+Varicose veins,1, swollen_legs,0.95
+Varicose veins,2," cramps,  prominent_veins_on_calf",0.9
+Varicose veins,2," prominent_veins_on_calf,  swollen_legs",0.9
+Varicose veins,2," fatigue,  obesity",0.9
+Varicose veins,2," fatigue,  swollen_legs",0.9
+Varicose veins,2," prominent_veins_on_calf,  swollen_blood_vessels",0.85
+Varicose veins,2," bruising,  swollen_blood_vessels",0.85
+Varicose veins,2," obesity,  prominent_veins_on_calf",0.9
+Varicose veins,2," bruising,  swollen_legs",0.9
+Varicose veins,2," bruising,  obesity",0.9
+Varicose veins,2," bruising,  fatigue",0.9
+Varicose veins,2," bruising,  prominent_veins_on_calf",0.9
+Varicose veins,2," fatigue,  prominent_veins_on_calf",0.9
+Varicose veins,2," swollen_blood_vessels,  swollen_legs",0.85
+Varicose veins,2," obesity,  swollen_blood_vessels",0.85
+Varicose veins,2," cramps,  swollen_legs",0.9
+Varicose veins,2," cramps,  obesity",0.9
+Varicose veins,2," bruising,  cramps",0.9
+Varicose veins,2," obesity,  swollen_legs",0.9
+Varicose veins,2," cramps,  swollen_blood_vessels",0.85
+Varicose veins,2," cramps,  fatigue",0.9
+Varicose veins,2," fatigue,  swollen_blood_vessels",0.85
+Varicose veins,2," cramps,  prominent_veins_on_calf",0.9
+Varicose veins,2," prominent_veins_on_calf,  swollen_legs",0.9
+Varicose veins,2," fatigue,  obesity",0.9
+Varicose veins,2," fatigue,  swollen_legs",0.9
+Varicose veins,2," prominent_veins_on_calf,  swollen_blood_vessels",0.85
+Varicose veins,2," bruising,  swollen_blood_vessels",0.85
+Varicose veins,2," obesity,  prominent_veins_on_calf",0.9
+Varicose veins,2," bruising,  swollen_legs",0.9
+Varicose veins,2," bruising,  obesity",0.9
+Varicose veins,2," bruising,  fatigue",0.9
+Varicose veins,2," bruising,  prominent_veins_on_calf",0.9
+Varicose veins,2," fatigue,  prominent_veins_on_calf",0.9
+Varicose veins,2," swollen_blood_vessels,  swollen_legs",0.85
+Varicose veins,2," obesity,  swollen_blood_vessels",0.85
+Varicose veins,2," cramps,  swollen_legs",0.9
+Varicose veins,2," cramps,  obesity",0.9
+Varicose veins,2," bruising,  cramps",0.9
+Varicose veins,2," obesity,  swollen_legs",0.9
+Varicose veins,2," cramps,  swollen_blood_vessels",0.85
+Varicose veins,2," cramps,  fatigue",0.9
+Varicose veins,2," fatigue,  swollen_blood_vessels",0.85
+Varicose veins,3," cramps,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," fatigue,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  fatigue,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  fatigue,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," bruising,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," cramps,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," fatigue,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," bruising,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," bruising,  fatigue,  obesity",0.85
+Varicose veins,3," bruising,  fatigue,  swollen_legs",0.85
+Varicose veins,3," bruising,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  obesity,  swollen_legs",0.85
+Varicose veins,3," obesity,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," fatigue,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," fatigue,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  fatigue,  obesity",0.85
+Varicose veins,3," cramps,  fatigue,  swollen_legs",0.85
+Varicose veins,3," cramps,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  cramps,  fatigue",0.85
+Varicose veins,3," fatigue,  obesity,  swollen_legs",0.85
+Varicose veins,3," cramps,  fatigue,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  cramps,  swollen_legs",0.85
+Varicose veins,3," bruising,  cramps,  obesity",0.85
+Varicose veins,3," bruising,  cramps,  prominent_veins_on_calf",0.85
+Varicose veins,3," cramps,  fatigue,  prominent_veins_on_calf",0.85
+Varicose veins,3," cramps,  obesity,  swollen_legs",0.85
+Varicose veins,3," fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," obesity,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," bruising,  cramps,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," cramps,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," fatigue,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  fatigue,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  fatigue,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," bruising,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," cramps,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," fatigue,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," bruising,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," bruising,  fatigue,  obesity",0.85
+Varicose veins,3," bruising,  fatigue,  swollen_legs",0.85
+Varicose veins,3," bruising,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  obesity,  swollen_legs",0.85
+Varicose veins,3," obesity,  prominent_veins_on_calf,  swollen_legs",0.85
+Varicose veins,3," fatigue,  obesity,  swollen_blood_vessels",0.8
+Varicose veins,3," fatigue,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  fatigue,  obesity",0.85
+Varicose veins,3," cramps,  fatigue,  swollen_legs",0.85
+Varicose veins,3," cramps,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  obesity,  prominent_veins_on_calf",0.85
+Varicose veins,3," bruising,  cramps,  fatigue",0.85
+Varicose veins,3," fatigue,  obesity,  swollen_legs",0.85
+Varicose veins,3," cramps,  fatigue,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," bruising,  cramps,  swollen_legs",0.85
+Varicose veins,3," bruising,  cramps,  obesity",0.85
+Varicose veins,3," bruising,  cramps,  prominent_veins_on_calf",0.85
+Varicose veins,3," cramps,  fatigue,  prominent_veins_on_calf",0.85
+Varicose veins,3," cramps,  obesity,  swollen_legs",0.85
+Varicose veins,3," fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.8
+Varicose veins,3," obesity,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,3," bruising,  cramps,  swollen_blood_vessels",0.8
+Varicose veins,3," cramps,  swollen_blood_vessels,  swollen_legs",0.8
+Varicose veins,4," cramps,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," bruising,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  swollen_legs",0.8
+Varicose veins,4," bruising,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  fatigue,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," cramps,  fatigue,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  cramps,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  obesity,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," cramps,  fatigue,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  fatigue,  swollen_legs",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  obesity",0.8
+Varicose veins,4," bruising,  cramps,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  prominent_veins_on_calf",0.8
+Varicose veins,4," cramps,  fatigue,  obesity,  swollen_legs",0.8
+Varicose veins,4," cramps,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," bruising,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  swollen_legs",0.8
+Varicose veins,4," bruising,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  fatigue,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," bruising,  fatigue,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," cramps,  fatigue,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  cramps,  obesity,  prominent_veins_on_calf",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  obesity,  swollen_legs",0.8
+Varicose veins,4," cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.75
+Varicose veins,4," cramps,  fatigue,  swollen_blood_vessels,  swollen_legs",0.75
+Varicose veins,4," cramps,  fatigue,  obesity,  swollen_blood_vessels",0.75
+Varicose veins,4," bruising,  cramps,  fatigue,  swollen_legs",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  obesity",0.8
+Varicose veins,4," bruising,  cramps,  prominent_veins_on_calf,  swollen_legs",0.8
+Varicose veins,4," bruising,  cramps,  fatigue,  prominent_veins_on_calf",0.8
+Varicose veins,4," cramps,  fatigue,  obesity,  swollen_legs",0.8
+Varicose veins,5," bruising,  cramps,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf",0.75
+Varicose veins,5," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  swollen_legs",0.75
+Varicose veins,5," bruising,  cramps,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf",0.75
+Varicose veins,5," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," cramps,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.7
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  swollen_blood_vessels",0.7
+Varicose veins,5," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_legs",0.75
+Varicose veins,5," bruising,  cramps,  fatigue,  obesity,  swollen_legs",0.75
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.7
+Varicose veins,6," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.65
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_legs",0.7
+Varicose veins,6," bruising,  cramps,  fatigue,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels",0.65
+Varicose veins,6," bruising,  cramps,  fatigue,  obesity,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  cramps,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,6," bruising,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.65
+Varicose veins,7," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.6
+Varicose veins,7," bruising,  cramps,  fatigue,  obesity,  prominent_veins_on_calf,  swollen_blood_vessels,  swollen_legs",0.6

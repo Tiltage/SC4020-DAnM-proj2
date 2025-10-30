@@ -3,13 +3,13 @@ from itertools import combinations
 from collections import defaultdict
 import time
 from typing import List, Set, Dict, Tuple
+import numpy as np
 
 class Apriori:
     """
     Apriori Algorithm Implementation for Frequent Itemset Mining
     """
-    
-    def __init__(self, min_support: float = 0.1, min_confidence: float = 0.5):
+    def __init__(self, min_support = 0.1, min_confidence = 0.5):
         """
         Initialize Apriori algorithm with parameters
         
@@ -22,191 +22,156 @@ class Apriori:
         self.transactions = []
         self.frequent_itemsets = {}
         self.association_rules = []
+        self.total_itemsets = 0
+
+        #Binary mapping
+        self.item_to_idx = {}
+        self.idx_to_item = {} 
         
-    def load_data(self, file_path: str, delimiter: str = ',') -> None:
+    def load_data(self, df: pd.DataFrame) -> None:
         """
-        Load transaction data from CSV file
-        
-        Args:
-            file_path: Path to CSV file
-            delimiter: Column delimiter in CSV
+        Load a pandas DataFrame and encode symptoms as binary vectors.
+        Assumes first column is Disease,
+        rest are symptoms (may contain NaN)
         """
-        try:
-            df = pd.read_csv(file_path, delimiter=delimiter)
-            self.transactions = [set(row.dropna().astype(str)) for _, row in df.iterrows()]
-            print(f"Loaded {len(self.transactions)} transactions")
-        except Exception as e:
-            print(f"Error loading data: {e}")
+        # Get all unique items (excluding NaN)
+        unique_items = sorted(df.iloc[:, :].stack().dropna().unique())
+        self.item_to_idx = {item: i for i, item in enumerate(unique_items)}
+        self.idx_to_item = {i: item for item, i in self.item_to_idx.items()}
+
+        # Initialize transaction matrix
+        num_transactions = len(df)
+        num_items = len(unique_items)
+        self.transactions = np.zeros((num_transactions, num_items), dtype=bool)
+
+        for row_idx, row in enumerate(df.iloc[:, :].values):
+            for item in row:
+                if pd.notna(item):
+                    self.transactions[row_idx, self.item_to_idx[item]] = True
+
+        self.total_itemsets = num_transactions
+        print(f"Loaded {self.total_itemsets} transactions with {num_items} unique items.")
     
-    def create_transactions(self, data: List[List[str]]) -> None:
-        """
-        Create transactions from list of lists
-        
-        Args:
-            data: List of transactions where each transaction is a list of items
-        """
-        self.transactions = [set(transaction) for transaction in data]
-        print(f"Created {len(self.transactions)} transactions")
+    # def _get_unique_items(self) -> Set[str]:
+    #     """Get all unique items from all transactions"""
+    #     unique_items = set()
+    #     for transaction in self.transactions:
+    #         unique_items.update(transaction)
+    #     return unique_items
     
-    def get_unique_items(self) -> Set[str]:
-        """Get all unique items from all transactions"""
-        unique_items = set()
-        for transaction in self.transactions:
-            unique_items.update(transaction)
-        return unique_items
+    def calculate_support(self, itemset_indices: Set[int]) -> float:
+        """
+        Calculate support for an itemset (given as indices)
+        """
+        # Vectorized: check rows where all itemset columns are True
+        count = np.sum(np.all(self.transactions[:, list(itemset_indices)], axis=1))
+        return count / self.total_itemsets
     
-    def calculate_support(self, itemset: Set[str]) -> float:
+    def generate_candidates(self, prev_frequent: List[Set[int]], k: int) -> List[Set[int]]:
         """
-        Calculate support for an itemset
-        
-        Args:
-            itemset: Set of items to calculate support for
-            
-        Returns:
-            Support value (0.0 to 1.0)
+        Generate candidate itemsets of size k from previous frequent itemsets
         """
-        if not self.transactions:
-            return 0.0
-        
-        count = 0
-        for transaction in self.transactions:
-            if itemset.issubset(transaction):
-                count += 1
-                
-        return count / len(self.transactions)
-    
-    def generate_candidates(self, prev_frequent: List[Set[str]], k: int) -> List[Set[str]]:
-        """
-        Generate candidate itemsets of size k
-        
-        Args:
-            prev_frequent: Frequent itemsets of size k-1
-            k: Size of candidate itemsets to generate
-            
-        Returns:
-            List of candidate itemsets
-        """
-        candidates = []
-        
-        # Join step: Combine itemsets
+        candidates = set()
         for i in range(len(prev_frequent)):
             for j in range(i + 1, len(prev_frequent)):
-                itemset1 = prev_frequent[i]
-                itemset2 = prev_frequent[j]
-                
-                # Join if first k-2 items are the same
-                if len(itemset1.union(itemset2)) == k:
-                    candidate = itemset1.union(itemset2)
-                    candidates.append(candidate)
-        
-        # Prune step: Remove candidates with infrequent subsets
-        pruned_candidates = []
+                union_set = prev_frequent[i] | prev_frequent[j]
+                if len(union_set) == k:
+                    candidates.add(frozenset(union_set))  # frozenset ensures uniqueness
+        # Convert back to list of sets for the rest of the code
+        pruned_candidates = [set(x) for x in candidates]
+
+        # Prune: remove candidates with any infrequent (k-1)-subset
+        prev_frequent_set = set(frozenset(x) for x in prev_frequent)
         for candidate in candidates:
             valid = True
-            # Check all subsets of size k-1
             for subset in combinations(candidate, k - 1):
-                if set(subset) not in prev_frequent:
+                if frozenset(subset) not in prev_frequent_set:
                     valid = False
                     break
             if valid:
                 pruned_candidates.append(candidate)
-                
+
         return pruned_candidates
     
-    def find_frequent_itemsets(self) -> Dict[int, List[Set[str]]]:
+    # def create_transactions(self, data: List[List[str]]) -> None:
+    #     """
+    #     Create transactions from list of lists
+        
+    #     Args:
+    #         data: List of transactions where each transaction is a list of items
+    #     """
+    #     self.transactions = [set(transaction) for transaction in data]
+    #     print(f"Created {len(self.transactions)} transactions")
+
+    def find_frequent_itemsets(self) -> Dict[int, List[Set[int]]]:
         """
         Find all frequent itemsets using Apriori algorithm
-        
-        Returns:
-            Dictionary with itemset size as key and list of frequent itemsets as value
         """
         print("Finding frequent itemsets...")
         start_time = time.time()
-        
+
         self.frequent_itemsets = {}
-        
-        # Step 1: Find frequent 1-itemsets
-        unique_items = self.get_unique_items()
+
+        # 1-itemsets
+        num_items = self.transactions.shape[1]
         frequent_1 = []
-        
-        for item in unique_items:
-            support = self.calculate_support({item})
+        for idx in range(num_items):
+            support = self.calculate_support({idx})
             if support >= self.min_support:
-                frequent_1.append({item})
-        
+                frequent_1.append({idx})
+
         self.frequent_itemsets[1] = frequent_1
         print(f"Found {len(frequent_1)} frequent 1-itemsets")
-        
-        # Step 2: Find frequent k-itemsets
+
+        # >2-itemsets
         k = 2
-        while self.frequent_itemsets[k - 1]:
-            # Generate candidates
+        while self.frequent_itemsets.get(k - 1):
             candidates = self.generate_candidates(self.frequent_itemsets[k - 1], k)
-            
-            # Calculate support and filter
             frequent_k = []
             for candidate in candidates:
                 support = self.calculate_support(candidate)
                 if support >= self.min_support:
                     frequent_k.append(candidate)
-            
             self.frequent_itemsets[k] = frequent_k
             print(f"Found {len(frequent_k)} frequent {k}-itemsets")
-            
             k += 1
-        
-        # Remove empty levels
-        self.frequent_itemsets = {k: v for k, v in self.frequent_itemsets.items() if v}
-        
+
         end_time = time.time()
         print(f"Frequent itemset mining completed in {end_time - start_time:.2f} seconds")
-        
         return self.frequent_itemsets
     
     def generate_association_rules(self) -> List[Dict]:
         """
         Generate association rules from frequent itemsets
-        
-        Returns:
-            List of association rules with support, confidence, and lift
         """
         print("Generating association rules...")
+        start_time = time.time()
         self.association_rules = []
-        
-        for itemset_size, itemsets in self.frequent_itemsets.items():
-            if itemset_size < 2:  # Need at least 2 items for rules
+
+        for size, itemsets in self.frequent_itemsets.items():
+            if size < 2:
                 continue
-                
             for itemset in itemsets:
                 itemset_list = list(itemset)
                 itemset_support = self.calculate_support(itemset)
-                
-                # Generate all possible antecedents
-                for antecedent_size in range(1, itemset_size):
-                    for antecedent in combinations(itemset_list, antecedent_size):
+                for ante_size in range(1, size):
+                    for antecedent in combinations(itemset_list, ante_size):
                         antecedent_set = set(antecedent)
                         consequent_set = itemset - antecedent_set
-                        
-                        # Calculate confidence
                         antecedent_support = self.calculate_support(antecedent_set)
                         if antecedent_support > 0:
                             confidence = itemset_support / antecedent_support
-                            
-                            if confidence >= self.min_confidence:
-                                # Calculate lift
-                                consequent_support = self.calculate_support(consequent_set)
-                                lift = itemset_support / (antecedent_support * consequent_support) if consequent_support > 0 else 0
-                                
-                                rule = {
-                                    'antecedent': antecedent_set,
-                                    'consequent': consequent_set,
-                                    'support': itemset_support,
-                                    'confidence': confidence,
-                                    'lift': lift
-                                }
-                                self.association_rules.append(rule)
-        
-        print(f"Generated {len(self.association_rules)} association rules")
+                            rule = {
+                                'antecedent': {self.idx_to_item[i] for i in antecedent_set},
+                                'consequent': {self.idx_to_item[i] for i in consequent_set},
+                                'support': itemset_support,
+                                'confidence': confidence
+                            }
+                            self.association_rules.append(rule)
+
+        end_time = time.time()
+        print(f"Association rules completed in {end_time - start_time:.2f} seconds")
+        print(f"Generated {len(self.association_rules)} rules")
         return self.association_rules
     
     def print_frequent_itemsets(self) -> None:
@@ -219,7 +184,8 @@ class Apriori:
             print(f"\n{size}-Itemsets (Support >= {self.min_support}):")
             for itemset in itemsets:
                 support = self.calculate_support(itemset)
-                print(f"  {set(itemset)} - Support: {support:.3f}")
+                items_str = {self.idx_to_item[i] for i in itemset}
+                print(f"{items_str} - Support: {support:.3f}")
     
     def print_association_rules(self, top_n: int = 10) -> None:
         """
@@ -243,7 +209,6 @@ class Apriori:
             print(f"  IF {rule['antecedent']} THEN {rule['consequent']}")
             print(f"  Support: {rule['support']:.3f}")
             print(f"  Confidence: {rule['confidence']:.3f}")
-            print(f"  Lift: {rule['lift']:.3f}")
     
     def get_summary(self) -> Dict:
         """Get summary statistics of the analysis"""
@@ -274,12 +239,14 @@ def example_usage():
         ['diapers', 'cola'],
         ['bread', 'milk']
     ]
-    
+    sample_data_df = pd.DataFrame.from_records(sample_data)
+    print(sample_data_df)
+
     # Initialize Apriori
     apriori = Apriori(min_support=0.3, min_confidence=0.5)
     
     # Load data
-    apriori.create_transactions(sample_data)
+    apriori.load_data(sample_data_df)
     
     # Find frequent itemsets
     frequent_itemsets = apriori.find_frequent_itemsets()
@@ -301,13 +268,4 @@ def example_usage():
 
 
 if __name__ == "__main__":
-    # Run example
     example_usage()
-    
-    # For using with CSV file:
-    # apriori = Apriori(min_support=0.1, min_confidence=0.5)
-    # apriori.load_data('transactions.csv')
-    # apriori.find_frequent_itemsets()
-    # apriori.generate_association_rules()
-    # apriori.print_frequent_itemsets()
-    # apriori.print_association_rules()
