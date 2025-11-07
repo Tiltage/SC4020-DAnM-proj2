@@ -172,7 +172,9 @@ class SequencePatternMiner:
                     pattern = self._pattern_from_key(pattern_key)
                     
                     # Calculate lift (discriminative power)
-                    lift = m_support / (b_support + 1e-6)  # avoid division by zero
+                    pseudocount = 0.5 / len(malignant_seqs)  # Small value relative to dataset size
+                    lift = (m_support + pseudocount) / (b_support + pseudocount)
+
                     
                     # Determine which class this pattern discriminates
                     if lift > 1.5:
