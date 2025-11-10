@@ -52,13 +52,6 @@ class Apriori:
         self.total_itemsets = num_transactions
         print(f"Loaded {self.total_itemsets} transactions with {num_items} unique items.")
     
-    # def _get_unique_items(self) -> Set[str]:
-    #     """Get all unique items from all transactions"""
-    #     unique_items = set()
-    #     for transaction in self.transactions:
-    #         unique_items.update(transaction)
-    #     return unique_items
-    
     def calculate_support(self, itemset_indices: Set[int]) -> float:
         """
         Calculate support for an itemset (given as indices)
@@ -92,16 +85,6 @@ class Apriori:
                 pruned_candidates.append(candidate)
 
         return pruned_candidates
-    
-    # def create_transactions(self, data: List[List[str]]) -> None:
-    #     """
-    #     Create transactions from list of lists
-        
-    #     Args:
-    #         data: List of transactions where each transaction is a list of items
-    #     """
-    #     self.transactions = [set(transaction) for transaction in data]
-    #     print(f"Created {len(self.transactions)} transactions")
 
     def find_frequent_itemsets(self) -> Dict[int, List[Set[int]]]:
         """
