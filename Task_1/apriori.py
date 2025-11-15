@@ -7,7 +7,7 @@ import numpy as np
 
 class Apriori:
     """
-    Apriori Algorithm Implementation for Frequent Itemset Mining
+    Apriori Algorithm
     """
     def __init__(self, min_support = 0.1, min_confidence = 0.5):
         """
