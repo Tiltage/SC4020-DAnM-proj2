@@ -58,9 +58,7 @@ class Discretization_Analyzer:
         discretizer : fitted KBinsDiscretizer
         discretized_df : DataFrame with discretized values
         """
-        print(f"\n{'='*70}")
-        print(f"APPLYING {strategy.upper()} DISCRETIZATION")
-        print(f"{'='*70}")
+        print(f"\nApplying {strategy} Discretations\n")
         
         # Prepare data
         X = self.df[self.feature_cols].values
@@ -118,7 +116,6 @@ class Discretization_Analyzer:
         discretized_sequences : list
             List of dictionaries with discretized sequences
         """
-        print(f"\nCreating discretized sequences...")
         print(f"Number of input sequences: {len(self.sequences)}")
         
         discretized_sequences = []
@@ -127,33 +124,19 @@ class Discretization_Analyzer:
         for i in range(len(self.sequences)):
             seq_data = self.sequences[i]
             
-            # Get original sequence (list of feature names)
-            original_sequence = seq_data['sequence'][0]  # It's nested [[...]]
-            
-            # Debug first sequence
-            if i == 0:
-                print(f"First sequence structure:")
-                print(f"  Full seq_data keys: {seq_data.keys()}")
-                print(f"  Original sequence: {original_sequence}")
-                print(f"  Number of features: {len(original_sequence)}")
-            
-            # Get discretized labels for these features
+            # Get top-k features (ranked by z-score)
+            top_features = seq_data['top_features']  # List of 5 feature names
+
+            # Get discretized labels for these features in order
             discretized_items = []
-            for feature_name in original_sequence:
-                # Check if feature exists in discretized_df
-                if feature_name not in discretized_df.columns:
-                    print(f"WARNING: Feature '{feature_name}' not found in discretized data!")
-                    continue
-                
-                # Get bin value (0, 1, or 2)
+            for feature_name in top_features:
+                # Get bin value
                 bin_value = int(discretized_df.iloc[i][feature_name])
                 label = label_map[bin_value]
                 
-                # Create labeled item: "label_feature"
                 discretized_item = f"{label}_{feature_name}"
                 discretized_items.append(discretized_item)
-            
-            # Store as separate itemsets (proper sequential format)
+
             discretized_sequence = []
             for item in discretized_items:
                 discretized_sequence.append([item])
@@ -161,7 +144,7 @@ class Discretization_Analyzer:
             discretized_seq_dict = {
                 'id': seq_data['id'],
                 'diagnosis': seq_data['diagnosis'],
-                'original_sequence': original_sequence,
+                'original_sequence': seq_data['top_features'],
                 'discretized_sequence': discretized_sequence,
                 'z_scores': seq_data['z_scores']
             }
@@ -181,50 +164,31 @@ class Discretization_Analyzer:
             orig_preview = []
             for j in range(min(3, len(seq['original_sequence']))):
                 orig_preview.append(seq['original_sequence'][j])
-            print(f"    Original: {orig_preview}...")
+            print(f"    Original: {orig_preview}")
             
             # Show first 3 features from discretized
             disc_preview = []
             for j in range(min(3, len(seq['discretized_sequence']))):
                 disc_preview.append(seq['discretized_sequence'][j][0])
-            print(f"    Discretized: {disc_preview}...")
+            print(f"    Discretized: {disc_preview}")
         
         return discretized_sequences
     
-    def find_frequent_patterns(self, discretized_sequences, min_support=0.01):
-        """
-        Find frequent sequential patterns using simplified GSP
+    def find_frequent_patterns(self, discretized_sequences, min_support=0.01, max_gap=1):
+        '''
+        Find frequent sequential patterns using GSP with max_gap 1
+        '''
+        print(f"\nMining patterns with min_support={min_support}, max_gap={max_gap}")
         
-        Parameters:
-        -----------
-        discretized_sequences : list
-            Discretized sequences
-        min_support : float
-            Minimum support threshold
-            
-        Returns:
-        --------
-        patterns : dict
-            Dictionary of patterns with their support
-        """
-        print(f"\nMining patterns with min_support={min_support}...")
-        
-        # Extract just the sequences
-        sequences = []
-        for seq_data in discretized_sequences:
-            sequences.append(seq_data['discretized_sequence'])
+        # Extract sequences
+        sequences = [seq_data['discretized_sequence'] for seq_data in discretized_sequences]
         
         n_sequences = len(sequences)
         min_count = int(min_support * n_sequences)
         
-        print(f"Total sequences: {n_sequences}")
         print(f"Minimum count needed: {min_count}")
         
-        # Show example sequence for debugging
-        if len(sequences) > 0:
-            print(f"Example sequence: {sequences[0][:3]}...")  # First 3 items
-        
-        # Find frequent 1-itemsets
+        # length 1
         item_counts = defaultdict(int)
         
         for seq in sequences:
@@ -232,63 +196,53 @@ class Discretization_Analyzer:
             for itemset in seq:
                 for item in itemset:
                     seen_items.add(item)
-            
             for item in seen_items:
                 item_counts[item] += 1
         
-        print(f"Total unique items found: {len(item_counts)}")
-        
-        # Filter by support
         frequent_1 = {}
         for item, count in item_counts.items():
             if count >= min_count:
-                support = count / n_sequences
-                frequent_1[item] = support
+                frequent_1[item] = count / n_sequences
         
-        # Find frequent 2-sequences
-        pattern_counts = defaultdict(int)
+        # length 2
+        pattern_counts_2 = defaultdict(int)
         
         for seq in sequences:
-            # Extract all 2-item sequential patterns
-            for i in range(len(seq) - 1):
-                for item1 in seq[i]:
-                    for item2 in seq[i + 1]:
-                        pattern = (item1, item2)
-                        pattern_counts[pattern] += 1
+            for i in range(len(seq)):
+                # j can be i+1 (gap=0) or i+2 (gap=1) when max_gap=1
+                for j in range(i + 1, min(i + max_gap + 2, len(seq))):
+                    for item1 in seq[i]:
+                        for item2 in seq[j]:
+                            pattern = (item1, item2)
+                            pattern_counts_2[pattern] += 1
         
-        print(f"Total 2-patterns before filtering: {len(pattern_counts)}")
-        
-        # Filter by support
         frequent_2 = {}
-        for pattern, count in pattern_counts.items():
+        for pattern, count in pattern_counts_2.items():
             if count >= min_count:
-                support = count / n_sequences
-                frequent_2[pattern] = support
+                frequent_2[pattern] = count / n_sequences
         
-        # Find frequent 3-sequences
+        # length 3
         pattern_counts_3 = defaultdict(int)
         
         for seq in sequences:
-            for i in range(len(seq) - 2):
-                for item1 in seq[i]:
-                    for item2 in seq[i + 1]:
-                        for item3 in seq[i + 2]:
-                            pattern = (item1, item2, item3)
-                            pattern_counts_3[pattern] += 1
+            for i in range(len(seq)):
+                for j in range(i + 1, min(i + max_gap + 2, len(seq))):
+                    for k in range(j + 1, min(j + max_gap + 2, len(seq))):
+                        for item1 in seq[i]:
+                            for item2 in seq[j]:
+                                for item3 in seq[k]:
+                                    pattern = (item1, item2, item3)
+                                    pattern_counts_3[pattern] += 1
         
-        print(f"Total 3-patterns before filtering: {len(pattern_counts_3)}")
-        
-        # Filter by support
         frequent_3 = {}
         for pattern, count in pattern_counts_3.items():
             if count >= min_count:
-                support = count / n_sequences
-                frequent_3[pattern] = support
+                frequent_3[pattern] = count / n_sequences
         
-        print(f"  Found {len(frequent_1)} frequent 1-itemsets")
-        print(f"  Found {len(frequent_2)} frequent 2-sequences")
-        print(f"  Found {len(frequent_3)} frequent 3-sequences")
-        
+        print(f"Found {len(frequent_1)} frequent 1-itemsets")
+        print(f"Found {len(frequent_2)} frequent 2-sequences")
+        print(f"Found {len(frequent_3)} frequent 3-sequences")
+            
         # Show examples
         if len(frequent_1) > 0:
             examples = list(frequent_1.items())[:3]
@@ -300,7 +254,7 @@ class Discretization_Analyzer:
             examples = list(frequent_2.items())[:3]
             print(f"\n  Example 2-sequences:")
             for pattern, support in examples:
-                print(f"    {pattern}: {support:.2%}")
+                print(f"{pattern}: {support:.2%}")
         
         return {
             'length_1': frequent_1,
@@ -324,7 +278,7 @@ class Discretization_Analyzer:
         pattern_analysis : list
             List of patterns with lift calculations
         """
-        print(f"\nCalculating lift by diagnosis class...")
+        print(f"\nCalculating lift by diagnosis class")
         
         # Separate by diagnosis
         malignant_seqs = []
@@ -449,7 +403,7 @@ class Discretization_Analyzer:
         """
         # Check if pattern_analysis is empty
         if len(pattern_analysis) == 0:
-            print("WARNING: No patterns found to analyze!")
+            print("No patterns found to analyze!")
             # Return empty DataFrame with expected columns
             return pd.DataFrame(columns=['length', 'discriminates', 'pattern_count', 
                                         'lift_mean', 'lift_std', 
@@ -470,7 +424,7 @@ class Discretization_Analyzer:
                 missing_cols.append(col)
         
         if missing_cols:
-            print(f"ERROR: Missing columns: {missing_cols}")
+            print(f"Missing columns: {missing_cols}")
             print(f"Available columns: {df.columns.tolist()}")
             print(f"First row: {df.iloc[0].to_dict() if len(df) > 0 else 'No data'}")
             raise KeyError(f"Missing required columns: {missing_cols}")
@@ -535,7 +489,7 @@ class Discretization_Analyzer:
         
         for strategy in strategies:
             print(f"\n{'#'*70}")
-            print(f"# STRATEGY: {strategy.upper()}")
+            print(f"Strategy: {strategy}")
             print(f"{'#'*70}")
             
             # Step 1: Discretize
@@ -632,9 +586,7 @@ class Discretization_Analyzer:
         
         comparison_df = pd.DataFrame(comparison)
         
-        print(f"\n{'='*70}")
-        print("SENSITIVITY ANALYSIS: COMPARISON ACROSS STRATEGIES")
-        print(f"{'='*70}\n")
+        print("Comparison across strategies")
         print(comparison_df.to_string(index=False))
         
         return comparison_df
@@ -718,31 +670,3 @@ def visualize_results(all_results, comparison_df):
     
     plt.tight_layout()
     return fig
-
-
-# Example usage
-if __name__ == "__main__":
-    print("Part 2: Discretization Strategy Analysis")
-    print("="*70)
-    print("\nThis script should be imported and used with your Part 1 data.")
-    print("\nExample:")
-    print("""
-    # Load your data
-    df = pd.read_csv('cancer_data.csv')
-    sequences = [...your Part 1 output...]
-    
-    # Run analysis
-    analyzer = DiscretizationAnalyzer(df, sequences, n_bins=3)
-    results = analyzer.run_complete_analysis(
-        strategies=['uniform', 'quantile', 'kmeans'],
-        min_support=0.3
-    )
-    
-    # Compare strategies
-    comparison = analyzer.create_comparison_table(results)
-    
-    # Visualize
-    fig = visualize_results(results, comparison)
-    plt.savefig('discretization_comparison.png', dpi=300, bbox_inches='tight')
-    plt.show()
-    """)
