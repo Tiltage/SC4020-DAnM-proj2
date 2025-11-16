@@ -1,7 +1,5 @@
 """
 Part 2: Sensitivity Analysis Across Discretization Strategies
-==============================================================
-Version without list comprehensions - uses explicit for loops only
 
 This script takes the Part 1 output (feature sequences ranked by z-score)
 and applies three different discretization strategies (uniform, quantile, kmeans)
@@ -488,9 +486,7 @@ class Discretization_Analyzer:
         all_results = {}
         
         for strategy in strategies:
-            print(f"\n{'#'*70}")
             print(f"Strategy: {strategy}")
-            print(f"{'#'*70}")
             
             # Step 1: Discretize
             discretizer, discretized_df = self.discretize(strategy)
