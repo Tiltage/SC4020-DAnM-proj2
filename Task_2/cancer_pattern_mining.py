@@ -10,7 +10,7 @@ from collections import defaultdict
 from scipy import stats
 import json
 import itertools
-
+from itertools import combinations
 
 class SequenceTransformer:
     """Transform numerical features into categorical sequences based on z-scores"""
@@ -22,7 +22,7 @@ class SequenceTransformer:
         Args:
             top_k: Number of top features to select per patient
             max_length: Maximum sequence length
-            max_gap: Maximum gap for grouping features into itemsets
+            max_gap: Maximum gap allowed between consecutive items in subsequence
         """
         self.top_k = top_k
         self.max_length = max_length
@@ -38,7 +38,7 @@ class SequenceTransformer:
             df: DataFrame with 'id', 'diagnosis', and feature columns
             
         Returns:
-            List of dictionaries containing patient sequences
+            List of dictionaries containing patient sequences and all valid subsequences
         """
         # Get feature columns (exclude id and diagnosis)
         self.feature_cols = [col for col in df.columns 
@@ -48,9 +48,9 @@ class SequenceTransformer:
         self.z_score_matrix = {}
         for col in self.feature_cols:
             values = df[col].values
-            self.z_score_matrix[col] = stats.zscore(values)
+            self.z_score_matrix[col] = np.round(stats.zscore(values), 4)
         
-        # Transform each patient to sequence
+        # Transform each patient to sequences
         sequences = []
         for idx, row in df.iterrows():
             patient_id = row['id']
@@ -63,64 +63,76 @@ class SequenceTransformer:
             # Sort by z-score magnitude (descending)
             feature_scores.sort(key=lambda x: x[1], reverse=True)
             
-            # Create sequence from top-k features
-            sequence = self._create_sequence(feature_scores)
+            # Get top-k features
+            top_features = [f[0] for f in feature_scores[:self.top_k]]
+            top_z_scores = [float(f[1]) for f in feature_scores[:self.top_k]]
+            
+            # Generate all valid subsequences
+            subsequences = self._generate_all_subsequences(top_features)
             
             sequences.append({
                 'id': patient_id,
                 'diagnosis': diagnosis,
-                'sequence': sequence,
-                'top_features': [f[0] for f in feature_scores[:self.top_k]],
-                'z_scores': [f[1] for f in feature_scores[:self.top_k]]
+                'top_features': top_features,
+                'z_scores': top_z_scores,
+                'subsequences': subsequences  # All valid subsequences for mining
             })
         
         return sequences
     
-    def _create_sequence(self, feature_scores: List[Tuple[str, float]]) -> List[List[str]]:
+    def _generate_all_subsequences(self, features: List[str]) -> List[List[str]]:
         """
-        Create sequence with itemsets from ranked features
+        Generate all valid subsequences from ranked features respecting max_gap and max_length
         
         Args:
-            feature_scores: List of (feature_name, z_score) tuples sorted by z-score
+            features: List of feature names in ranked order (top-k)
             
         Returns:
-            List of itemsets (each itemset is a list of feature names)
+            List of all valid subsequences
         """
-        if not feature_scores:
+        if not features:
             return []
         
-        # Take top-k features
-        top_features = feature_scores[:self.top_k]
+        all_subsequences = []
+        n = len(features)
         
-        # Group features into itemsets based on rank proximity (maxgap)
-        sequence = []
-        current_itemset = [top_features[0][0]]
+        # Generate subsequences of length 1 to max_length
+        for length in range(1, min(self.max_length, n) + 1):
+            # Generate all combinations of indices of this length
+            for indices in combinations(range(n), length):
+                # Check if this combination satisfies max_gap constraint
+                if self._check_max_gap(indices):
+                    # Extract features at these indices
+                    subsequence = [features[i] for i in indices]
+                    all_subsequences.append(subsequence)
         
-        for i in range(1, min(len(top_features), self.max_length * 2)):
-            # Check if this feature should be in the same itemset
-            # (within maxgap positions)
-            if i - len(current_itemset) <= self.max_gap:
-                current_itemset.append(top_features[i][0])
-            else:
-                # Start new itemset
-                sequence.append(current_itemset)
-                current_itemset = [top_features[i][0]]
-                
-                # Stop if we've reached max_length itemsets
-                if len(sequence) >= self.max_length:
-                    break
+        return all_subsequences
+    
+    def _check_max_gap(self, indices: tuple) -> bool:
+        """
+        Check if a sequence of indices satisfies the max_gap constraint
         
-        # Add last itemset if not empty and within length limit
-        if current_itemset and len(sequence) < self.max_length:
-            sequence.append(current_itemset)
+        Args:
+            indices: Tuple of indices in ascending order
+            
+        Returns:
+            True if all consecutive gaps are <= max_gap
+        """
+        if len(indices) <= 1:
+            return True
         
-        return sequence[:self.max_length]
-
-
+        # Check gap between each consecutive pair
+        for i in range(len(indices) - 1):
+            gap = indices[i + 1] - indices[i] - 1
+            if gap > self.max_gap:
+                return False
+        
+        return True
+    
 class SequencePatternMiner:
     """Mine sequential patterns from categorized sequences"""
     
-    def __init__(self, min_support: float = 0.3, max_pattern_length: int = 3):
+    def __init__(self, min_support: float = 0.05, max_pattern_length: int = 3):
         """
         Initialize pattern miner
         
@@ -137,7 +149,7 @@ class SequencePatternMiner:
         Mine patterns from sequences
         
         Args:
-            sequences: List of sequence dictionaries with 'diagnosis' and 'sequence'
+            sequences: List of sequence dictionaries with 'diagnosis' and 'subsequences'
             
         Returns:
             DataFrame of patterns with support and discriminative metrics
@@ -147,7 +159,7 @@ class SequencePatternMiner:
             malignant_seqs = [s for s in sequences if s['diagnosis'] == 'M']
             benign_seqs = [s for s in sequences if s['diagnosis'] == 'B']
             
-            print(f"Processing {len(malignant_seqs)} malignant and {len(benign_seqs)} benign sequences")
+            print(f"Processing {len(malignant_seqs)} malignant and {len(benign_seqs)} benign patient records")
             
             # Extract patterns from each group
             malignant_patterns = self._extract_patterns(malignant_seqs)
@@ -171,31 +183,32 @@ class SequencePatternMiner:
                     # Convert pattern key back from string representation
                     pattern = self._pattern_from_key(pattern_key)
                     
-                    # Calculate lift (discriminative power)
-                    pseudocount = 0.5 / len(malignant_seqs)  # Small value relative to dataset size
-                    lift = (m_support + pseudocount) / (b_support + pseudocount)
-
-                    
-                    # Determine which class this pattern discriminates
-                    if lift > 1.5:
-                        discriminates = 'Malignant'
-                    elif lift < 0.67:
-                        discriminates = 'Benign'
-                    else:
-                        discriminates = 'Neutral'
-                    
-                    pattern_list.append({
-                        'pattern': pattern,
-                        'pattern_str': self._pattern_to_string(pattern),
-                        'length': len(pattern),
-                        'malignant_support': m_support,
-                        'benign_support': b_support,
-                        'malignant_count': m_count,
-                        'benign_count': b_count,
-                        'lift': lift,
-                        'log_lift': np.log(lift) if lift > 0 else -10,  # handle log(0)
-                        'discriminates': discriminates
-                    })
+                    # Filter by max pattern length
+                    if len(pattern) <= self.max_pattern_length:
+                        # Calculate lift (discriminative power)
+                        pseudocount = 0.5 / len(malignant_seqs)  # Small value relative to dataset size
+                        lift = (m_support + pseudocount) / (b_support + pseudocount)
+                        
+                        # Determine which class this pattern discriminates
+                        if lift > 1.5:
+                            discriminates = 'Malignant'
+                        elif lift < 0.67:
+                            discriminates = 'Benign'
+                        else:
+                            discriminates = 'Neutral'
+                        
+                        pattern_list.append({
+                            'pattern': pattern,
+                            'pattern_str': self._pattern_to_string(pattern),
+                            'length': len(pattern),
+                            'malignant_support': m_support,
+                            'benign_support': b_support,
+                            'malignant_count': m_count,
+                            'benign_count': b_count,
+                            'lift': lift,
+                            'log_lift': np.log(lift) if lift > 0 else -10,  # handle log(0)
+                            'discriminates': discriminates
+                        })
             
             # Create DataFrame and sort by discriminative power
             if pattern_list:
@@ -230,10 +243,10 @@ class SequencePatternMiner:
     
     def _extract_patterns(self, sequences: List[Dict]) -> Dict[str, int]:
         """
-        Extract all subset patterns from itemsets
+        Extract all subsequence patterns from patient records
         
         Args:
-            sequences: List of sequence dictionaries where each sequence contains one itemset
+            sequences: List of sequence dictionaries with 'subsequences' field
             
         Returns:
             Dictionary mapping pattern keys to counts
@@ -241,22 +254,15 @@ class SequencePatternMiner:
         pattern_counts = defaultdict(int)
         
         for seq_dict in sequences:
-            sequence = seq_dict['sequence']
+            # Get all subsequences for this patient
+            subsequences = seq_dict.get('subsequences', [])
             
-            # Each sequence contains one itemset with multiple features
-            if len(sequence) == 1 and isinstance(sequence[0], list):
-                itemset = sequence[0]  # Extract the actual itemset
-                
-                # Generate all subsets of the itemset (patterns of different lengths)
-                for length in range(1, min(self.max_pattern_length + 1, len(itemset) + 1)):
-                    # Generate all combinations of the given length
-                    for subset in itertools.combinations(itemset, length):
-                        # Sort for consistency and convert to pattern key
-                        pattern_key = json.dumps(sorted(subset))
-                        pattern_counts[pattern_key] += 1
-            else:
-                # Handle case where sequence format is different
-                print(f"Warning: Unexpected sequence format: {sequence}")
+            # Each subsequence is already a valid ordered pattern
+            for subseq in subsequences:
+                # Convert to pattern key (preserve order - sequential patterns!)
+                # Don't sort because order matters: [A, B, C] ≠ [C, B, A]
+                pattern_key = json.dumps(subseq)
+                pattern_counts[pattern_key] += 1
         
         return pattern_counts
     
@@ -268,9 +274,14 @@ class SequencePatternMiner:
             return [pattern_key]
     
     def _pattern_to_string(self, pattern: List[str]) -> str:
-        """Convert pattern to readable string format"""
+        """Convert pattern to readable string format (preserving order)"""
         if isinstance(pattern, list):
-            return '{' + ', '.join(pattern) + '}'
+            if len(pattern) == 1:
+                # Single feature
+                return '{' + pattern[0] + '}'
+            else:
+                # Sequential pattern
+                return ' → '.join(['{' + feat + '}' for feat in pattern])
         else:
             return '{' + str(pattern) + '}'
     
@@ -301,29 +312,42 @@ class SequencePatternMiner:
             print("No patterns to analyze")
             return
         
-        print(f"\n=== PATTERN ANALYSIS (Top {top_n}) ===")
+        print(f"\n{'='*80}")
+        print(f"SEQUENTIAL PATTERN MINING ANALYSIS (Top {top_n})")
+        print(f"{'='*80}")
         print(f"Total patterns mined: {len(self.patterns)}")
         
         # Count by discrimination type
         disc_counts = self.patterns['discriminates'].value_counts()
         print(f"\nPatterns by discrimination type:")
         for disc_type, count in disc_counts.items():
-            print(f"  {disc_type}: {count}")
+            print(f"  {disc_type:.<20} {count:>6} ({count/len(self.patterns)*100:>5.1f}%)")
         
         # Count by pattern length
         length_counts = self.patterns['length'].value_counts().sort_index()
         print(f"\nPatterns by length:")
         for length, count in length_counts.items():
-            print(f"  Length {length}: {count} patterns")
+            print(f"  Length {length}:.............. {count:>6} patterns ({count/len(self.patterns)*100:>5.1f}%)")
+        
+        # Statistics
+        print(f"\nLift statistics:")
+        print(f"  Max lift (Malignant):...... {self.patterns[self.patterns['discriminates']=='Malignant']['lift'].max():.2f}")
+        print(f"  Min lift (Benign):......... {self.patterns[self.patterns['discriminates']=='Benign']['lift'].min():.2f}")
+        print(f"  Mean |log(lift)|:.......... {abs(self.patterns['log_lift']).mean():.2f}")
         
         # Show top patterns
-        print(f"\nTop {top_n} discriminative patterns:")
+        print(f"\n{'─'*80}")
+        print(f"Top {top_n} Most Discriminative Patterns:")
+        print(f"{'─'*80}")
         top_patterns = self.get_top_patterns(top_n)
         
         for i, row in top_patterns.iterrows():
-            print(f"{i+1:2d}. [{row['discriminates']:8}] lift:{row['lift']:6.2f} "
-                  f"(M:{row['malignant_support']:.3f}, B:{row['benign_support']:.3f}) "
-                  f"- {row['pattern_str']}")
+            print(f"\n{i+1:2d}. {row['pattern_str']}")
+            print(f"    Class: {row['discriminates']:9} | Lift: {row['lift']:8.2f} | Length: {row['length']}")
+            print(f"    Malignant Support: {row['malignant_support']:6.2%} ({row['malignant_count']:3d} patients)")
+            print(f"    Benign Support:    {row['benign_support']:6.2%} ({row['benign_count']:3d} patients)")
+        
+
 
 
 
@@ -359,63 +383,39 @@ def export_results(patterns: pd.DataFrame, sequences: List[Dict],
     
     Args:
         patterns: DataFrame of mined patterns
-        sequences: List of sequences
+        sequences: List of sequences from Part 1
         output_prefix: Prefix for output files
     """
     # Export patterns
     patterns_export = patterns[['pattern_str', 'length', 'malignant_support', 
-                                'benign_support', 'lift', 'discriminates']].copy()
+                                'benign_support', 'malignant_count', 'benign_count',
+                                'lift', 'discriminates']].copy()
     patterns_export.to_csv(f'{output_prefix}_patterns.csv', index=False)
+    print(f"Exported {len(patterns_export)} patterns to {output_prefix}_patterns.csv")
     
-    # Export sequences
+    # Export patient-level features (top-k ranked by z-score)
     seq_export = []
     for s in sequences:
+        # Format top features with their z-scores
+        features_with_scores = []
+        for feat, zscore in zip(s['top_features'], s['z_scores']):
+            features_with_scores.append(f"{feat}({zscore:.2f})")
+        
         seq_export.append({
             'id': s['id'],
             'diagnosis': s['diagnosis'],
-            'sequence': ' → '.join(['{' + ','.join(itemset) + '}' 
-                                   for itemset in s['sequence']]),
-            'top_features': ','.join(s['top_features'])
+            'top_features': ', '.join(s['top_features']),
+            'top_features_with_zscores': ', '.join(features_with_scores),
+            'num_subsequences_generated': len(s['subsequences']),
+            'mean_zscore': np.mean(s['z_scores']),
+            'max_zscore': max(s['z_scores'])
         })
-    pd.DataFrame(seq_export).to_csv(f'{output_prefix}_sequences.csv', index=False)
     
-    print(f"Results exported to {output_prefix}_patterns.csv and {output_prefix}_sequences.csv")
-
-
-if __name__ == "__main__":
-    # Example usage
-    print("Cancer Feature Sequential Pattern Mining")
-    print("=" * 50)
+    seq_df = pd.DataFrame(seq_export)
+    seq_df.to_csv(f'{output_prefix}_patient_features.csv', index=False)
+    print(f"Exported {len(seq_df)} patient records to {output_prefix}_patient_features.csv")
     
-    # Load data
-    df = pd.read_csv('../RawData/cancer_data.csv')
-    print(f"\nLoaded {len(df)} records")
     
-    # Transform to sequences
-    print("\nTransforming to sequences...")
-    transformer = SequenceTransformer(top_k=5, max_length=3, max_gap=1)
-    sequences = transformer.fit_transform(df)
-    
-    # Analyze sequences
-    stats = analyze_sequences(sequences)
-    print("\nSequence Statistics:")
-    for key, value in stats.items():
-        print(f"  {key}: {value}")
-    
-    print("Sequence format check:")
-    for i, seq in enumerate(sequences[:3]):
-        print(f"Sequence {i}: diagnosis={seq['diagnosis']}, sequence_type={type(seq['sequence'])}, length={len(seq['sequence'])}")
-        print(f"  Content: {seq['sequence']}")
-
-    # Mine patterns
-    print("\nMining patterns...")
-    miner = SequencePatternMiner(min_support=0.3)
-    patterns = miner.mine_patterns(sequences)
-    
-    print(f"\nFound {len(patterns)} frequent patterns")
-    print("\nTop 10 patterns:")
-    print(patterns[['pattern_str', 'malignant_support', 'benign_support', 
-                    'lift', 'discriminates']].head(10))
-    
-    # Export results
-    export_results(patterns, sequences)
+    print(f"Files created:")
+    print(f"  1. {output_prefix}_patterns.csv - {len(patterns_export)} mined patterns")
+    print(f"  2. {output_prefix}_patient_features.csv - {len(seq_df)} patient records")
